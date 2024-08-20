@@ -1,0 +1,221 @@
+.registration-containerlogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+  background-color: #f7ecf5;
+  font-family: "Merriweather";
+  /* margin-top: 7px; */
+  padding-top: 5px;
+}
+
+.content-wrapperlogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Space evenly around elements */
+  width: 90%;
+  max-width: 1200px;
+  gap: 80px; /* Reduced gap for smaller screens */
+  flex-wrap: wrap; /* Added this to make it responsive */
+}
+
+.image-sectionlogin {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  transition: transform 0.8s;
+}
+
+.wedding-imagelogin {
+  width: 100%;
+  max-width: 100%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.wedding-imagelogin:hover {
+  transform: scale(0.3s);
+}
+
+.form-sectionlogin {
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  /* margin-left: 80px; */
+  width: 489px;
+  padding: 49.449px 43.65px 55.909px 43.65px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20.3px 0px rgba(171, 29, 121, 0.5);
+}
+
+.title-outsidelogin {
+  color: #ab1d79;
+  font-weight: bold;
+}
+.title-innerlogin {
+  color: #ab1d79;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 22.893px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.form-wrapperlogin {
+  margin-top: 10px;
+}
+
+.form-titlelogin {
+  color: #ab1d79;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.registration-formlogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.custom-phone-input {
+  border-color: #250319; /* Default border color */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.custom-phone-input:focus {
+  border-color: #db98c4 !important; /* Border color on focus */
+  box-shadow: 0 0 5px 5px rgba(240, 80, 80, 0.2) !important; /* Optional shadow for better visibility */
+}
+
+.otp-fieldslogin {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.otp-fieldslogin input {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 40px;
+  border: 2px solid #ab1d79;
+  box-shadow: 0px 0px 4.94px 0px rgba(230, 20, 20, 0.26);
+}
+
+.otp-fieldlogin :focus {
+  border-color: rgb(221, 23, 23);
+}
+
+.otp-fieldslogin input:last-child {
+  margin-right: 0;
+}
+
+.para {
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.submit-buttonlogin {
+  width: 259.764px;
+  padding: 12.95px 0px 13.21px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  background: #ab1d79;
+  box-shadow: 0px 0px 11px 0px #ab1d79;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.submit-buttonlogin:hover {
+  background-color: #ab1d79; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .content-wrapperlogin {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-wrapperlogin {
+    flex-direction: column;
+  }
+
+  .image-sectionlogin,
+  .form-sectionlogin {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .titlelogin {
+    font-size: 24px;
+  }
+
+  .form-titlelogin {
+    font-size: 20px;
+  }
+
+  .input-fieldlogin {
+    padding: 15px;
+  }
+
+  .submit-buttonlogin {
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlelogin {
+    font-size: 20px;
+  }
+
+  .form-titlelogin {
+    font-size: 18px;
+  }
+
+  .input-fieldlogin {
+    padding: 10px;
+  }
+
+  .submit-buttonlogin {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titlelogin {
+    font-size: 18px;
+  }
+
+  .form-titlelogin {
+    font-size: 16px;
+  }
+
+  .input-fieldlogin {
+    padding: 8px;
+  }
+
+  .submit-buttonlogin {
+    padding: 6px 30px;
+  }
+}
